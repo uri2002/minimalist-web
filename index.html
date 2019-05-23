@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Minimal Website | stylessh </title>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    
+    
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="/src/assets/animate.css">
+    <!-- WOW -->
+    <script src="/src/assets/wow.min.js"></script>
+
+     <!-- jquery -->
+     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+     
+    <!-- tween max cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+</head>
+<body>
+
+    <!-- navbar goes here -->
+    <nav class="navbar">
+        <span class="brand">
+            <a href="index.html">stylessh</a>
+        </span>
+
+        <div class="btn-menu">menu.</div>
+
+        <ul>
+            <div class="close-btn">close.</div>
+            <li><a href="index.html">home</a></li>
+            <li><a href="#">work</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">about me</a></li>
+        </ul>
+    </nav>
+    <!-- navbar goes here -->
+
+    <!-- eslogan goes here -->
+    <section class="eslogan">
+        <div class="header">
+        <h1 class="line anim-typewriter">I make brands matter in culture.</h1>
+        </div>
+        <div class="scroll-down"></div>
+    </section>
+    <!-- eslogan goes here -->
+    
+    <!-- projects goes here -->
+    <section class="projects">
+        <div class="header">
+            <h3 class="wow fadeInUp">Selected projects</h3>
+            <div class="line wow fadeInUp"></div>
+        </div>
+
+        <div class="grid-2">
+            <div class="right work-1">
+                <img class="wow fadeInUp" src="/src/assets/img/work-1.jpg" alt="img">
+                <h2 class="wow fadeInUp">timeless work</h2>
+            </div>
+
+            <div class="left work-2 wow fadeInUp">
+                <img class="wow fadeInUp" src="/src/assets/img/work-2.jpg" alt="img">
+                <h2 class="wow fadeInUp">foretime</h2>
+            </div>
+
+            <div class="blankspace"></div>
+            
+            <div class="right work-3">
+                <img class="wow fadeInUp" src="/src/assets/img/work-3.jpg" alt="img">
+                <h2 class="wow fadeInUp">never again</h2>
+            </div>
+
+            <div class="left work-4">
+                <img class="wow fadeInUp" src="/src/assets/img/work-4.jpg" alt="img">
+                <h2 class="wow fadeInUp">inspired</h2>
+            </div>
+        </div>
+    </section>
+    <!-- projects goes here -->
+
+
+    <!-- footer goes here -->
+    <footer class="footer">
+        <p class="text wow fadeInRight">Got an interesting project? I can help you.</p>
+        <div class="line"></div>
+        
+        <div class="grid-3">
+            <div class="contact wow fadeInUp">
+                <h3>connect with me</h3>
+                <p>ig @s.ckness</p>
+            </div>
+
+            <div class="media wow fadeInUp">
+                <h3>follow me</h3>
+                <div class="icons">
+                    <a href="https://www.instagram.com/s.ckness/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/stylesshDev" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/danielStrecci"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+            <div class="email wow fadeInUp">
+                <h3>say hello</h3>
+                <p><a href="mailto:stylesshjs@gmail.com">stylesshjs@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer goes here -->
+
+
+    <!-- scripts -->
+
+    <script>
+        
+        // navbar animation starts
+    TweenMax.from('.brand', 1, {
+        delay: 0.4,
+        y: 10,
+        opacity: 0,
+        ease: Expo.easeInOut
+    });
+
+    TweenMax.staggerFrom('.navbar ul li a', 1, {
+        delay: 0.4,
+        y: 10,
+        opacity: 0,
+        ease: Expo.easeInOut
+    }, 0.1);
+
+    TweenMax.staggerFrom('.btn-menu', 1, {
+        delay: 0.4,
+        y: 10,
+        opacity: 0,
+        ease: Expo.easeInOut
+    }, 0.1);
+
+        // navbar animation ends
+    
+        // wow init
+    new WOW().init();
+    </script>
+
+    
+<script src="/src/js/script.js"></script>
+
+</body>
+</html>
